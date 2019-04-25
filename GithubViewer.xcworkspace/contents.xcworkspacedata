@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <Group
+      location = "container:"
+      name = "Feature">
+      <FileRef
+         location = "group:Feature/Favorite/Favorite.xcodeproj">
+      </FileRef>
+      <FileRef
+         location = "group:Feature/Search/Search.xcodeproj">
+      </FileRef>
+      <Group
+         location = "container:"
+         name = "Shared">
+         <FileRef
+            location = "group:Feature/Shared/GithubRepository/GithubRepository.xcodeproj">
+         </FileRef>
+      </Group>
+   </Group>
+   <Group
+      location = "container:"
+      name = "Common">
+      <FileRef
+         location = "group:Common/GithubAPI/GithubAPI.xcodeproj">
+      </FileRef>
+      <FileRef
+         location = "group:Common/UIKitSupport/UIKitSupport.xcodeproj">
+      </FileRef>
+   </Group>
+   <FileRef
+      location = "group:GithubViewer.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Pods/Pods.xcodeproj">
+   </FileRef>
+</Workspace>

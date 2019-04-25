@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Search View Controller-->
+        <scene sceneID="jhq-E1-8Bb">
+            <objects>
+                <viewController id="7LU-v6-CMS" customClass="SearchViewController" customModule="Search" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gum-aj-kE4">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="OYO-Re-u6A">
+                                <rect key="frame" x="0.0" y="44" width="414" height="56"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </searchBar>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="0mm-jo-wgs">
+                                <rect key="frame" x="0.0" y="100" width="414" height="762"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="OYO-Re-u6A" firstAttribute="trailing" secondItem="zpF-50-HVQ" secondAttribute="trailing" id="BTp-HR-jCh"/>
+                            <constraint firstItem="0mm-jo-wgs" firstAttribute="leading" secondItem="zpF-50-HVQ" secondAttribute="leading" id="CvW-fn-jEP"/>
+                            <constraint firstItem="0mm-jo-wgs" firstAttribute="top" secondItem="OYO-Re-u6A" secondAttribute="bottom" id="Hju-4o-klM"/>
+                            <constraint firstItem="0mm-jo-wgs" firstAttribute="trailing" secondItem="zpF-50-HVQ" secondAttribute="trailing" id="Jnb-7B-BCl"/>
+                            <constraint firstItem="OYO-Re-u6A" firstAttribute="top" secondItem="zpF-50-HVQ" secondAttribute="top" id="aGu-HG-QGJ"/>
+                            <constraint firstItem="0mm-jo-wgs" firstAttribute="top" secondItem="OYO-Re-u6A" secondAttribute="bottom" id="enX-MY-kSO"/>
+                            <constraint firstItem="OYO-Re-u6A" firstAttribute="leading" secondItem="zpF-50-HVQ" secondAttribute="leading" id="qYl-2j-XU8"/>
+                            <constraint firstItem="0mm-jo-wgs" firstAttribute="bottom" secondItem="zpF-50-HVQ" secondAttribute="bottom" id="zj4-8z-mPl"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="zpF-50-HVQ"/>
+                    </view>
+                    <connections>
+                        <outlet property="searchBar" destination="OYO-Re-u6A" id="PxY-wi-7V9"/>
+                        <outlet property="tableView" destination="0mm-jo-wgs" id="tAZ-K0-cTU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WrH-0V-ier" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-213.04347826086959" y="166.74107142857142"/>
+        </scene>
+    </scenes>
+</document>
